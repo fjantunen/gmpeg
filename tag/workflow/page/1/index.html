@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><title>workflow – GMPEG</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://www.gmpeg.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="ns-minimal-style-css" href="https://www.gmpeg.com/wp-content/themes/ns-minimal/style.css" type="text/css" media="all"><link rel="stylesheet" id="fontawesome-css" href="https://www.gmpeg.com/wp-content/themes/ns-minimal/css/font-awesome.css" type="text/css" media="all"><link rel="stylesheet" id="ns-minimal-google-font-css" href="https://fonts.googleapis.com/css?family=Nunito+Sans%3A300%2C400%2C400i%2C700%2C700i&subset=latin%2Clatin-ext" type="text/css" media="all"><script type="text/javascript" src="https://www.gmpeg.com/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://www.gmpeg.com/wp-includes/js/jquery/jquery-migrate.min.js"></script><script type="text/javascript" src="https://www.gmpeg.com/wp-content/themes/ns-minimal/js/jquery.fitvids.js"></script><style type="text/css" id="wp-custom-css">
+			.entry-meta .byline, .entry-meta .cat-links { display: none; }
+.entry-meta .posted-on { display: none; }
+		</style></head><body class="archive tag tag-workflow tag-22">
+
+
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner"><div class="container">
+
+      <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+			
+			<div class="site-branding">
+									<p class="site-title"><a href="https://www.gmpeg.com/" rel="home">GMPEG</a></p>
+										<p class="site-description">frank writes about stuff</p>
+							</div>
+
+			
+			<nav id="site-navigation" class="main-navigation" role="navigation"><button class="menu-toggle hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            <p class="hamburger-inner-text">Menu</p>
+          </span>
+        </button>
+
+				<div id="top-navigation" class="menu"><ul><li><a href="https://www.gmpeg.com/">Home</a></li></ul></div>
+
+			</nav></div>
+
+	</header><div class="container">
+
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area column three-fourths">
+
+		<header class="page-header"><h1 class="page-title">Tag: workflow</h1>		</header><main id="main" class="site-main" role="main"><article id="post-63" class="post-63 post type-post status-publish format-standard hentry category-technical tag-gcp tag-hosting tag-wordpress tag-workflow"><header class="entry-header"><h1 class="entry-title"><a href="https://www.gmpeg.com/hosting-a-static-wordpress-site-on-gcp/" rel="bookmark">How To Host A Static WordPress Site On GCP (Google Cloud)</a></h1>
+						<div class="entry-meta">
+				<span class="posted-on"><span class="screen-reader-text">Posted on</span> <a href="https://www.gmpeg.com/hosting-a-static-wordpress-site-on-gcp/" rel="bookmark"><time class="entry-date published" datetime="2019-10-04T13:17:00-04:00">October 4, 2019</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://www.gmpeg.com/author/frank/">Frank</a></span></span>							</div>
+			
+					</header><div class="entry-content">
+			
+<p>I am using Google Cloud at work, so I wanted to start a website on there as well. Turns out it’s dirt cheap to <a href="https://cloud.google.com/storage/docs/hosting-static-website">host your website in a GCP bucket</a>. </p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.gmpeg.com/wp-content/uploads/2019/10/image-1.png" alt="" class="wp-image-75" srcset="https://www.gmpeg.com/wp-content/uploads/2019/10/image-1.png 151w,https://www.gmpeg.com/wp-content/uploads/2019/10/image-1-150x150.png 150w" sizes="(max-width: 151px) 100vw, 151px"></figure><p>I looked at various static site generators to help me like Hugo, Pelican, and others. The reason being, so as to not have to worry about all the security aspects of hosting a WordPress site, with all the constant updates it requires. I was inspired by a chapter from<a href="https://amzn.to/359xcf4"> Josh Kaufman’s The First 20 Hours: How to Learn Anything . . . Fast!</a>. He writes about Jekyll, and Hugo is the logical one to choose should you go down that route.<br><br>I played around with quite a few of them and Hugo (Go) and Pelican (Python) are my favorites. Hugo is uber fast and efficient. They all support Markdown and I might end up going back to experiment some more with Hugo later on.<br><br>They were all interesting little experiments, but didn’t really meet my needs. I was already familiar with the concept on a self-hosted WordPress instance, however using <a href="https://wp2static.com/">WP2Static</a>, I could accomplish the same thing, but with less effort to maintain, and it ticks the box of “one less thing to do”.</p>
+
+
+
+<p>Using WordPress plugins to generate static web sites has some limitations. Here’s a great guide.</p>
+
+
+
+<p><a href="https://www.brianshim.com/webtricks/wordpress-static-site-generator/">https://www.brianshim.com/webtricks/wordpress-static-site-generator/</a></p>
+
+
+
+<p>Here’s my workflow:</p>
+
+
+
+<p>I create an Ubuntu VM with <a href="https://wordops.net/">WordOPs</a> scripts. I then install <a href="https://cloud.google.com/storage/docs/gsutil_install">gsutil</a> to connect to my gcp bucket after I generate the site’s contents.</p>
+
+
+
+<p>I then follow <a href="https://cloud.google.com/storage/docs/hosting-static-website">this guide</a> to set up my GCP bucket so it matches the DNS for my domain…</p>
+
+
+
+<p>Finally, I want to have CloudFlare <a href="https://community.cloudflare.com/t/using-cloudflare-cdn-https-with-google-cloud-storage/15602">manage my SSL</a> and act as a CDN to add extra security and limit the traffic to my bucket further.</p>
+
+
+
+<p>Now if I want to make a post, I have multiple levels of security. I would have to VPN into my network to connect to my WordPress VM. I can do this on my phone with the WordPress App. This isolates the wordpress portion.</p>
+
+
+
+<p>I can then generate the static site from my vm and push it to my bucket, making it effectively a staging site, separating it from production. I can do the whole process securely from my phone with a SSH client.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p><br></p>
+					</div>
+		
+		<footer class="entry-footer"><span class="cat-links">Posted in <a href="https://www.gmpeg.com/category/technical/" rel="category tag">technical</a></span><span class="tags-links">Tagged <a href="https://www.gmpeg.com/tag/gcp/" rel="tag">gcp</a>, <a href="https://www.gmpeg.com/tag/hosting/" rel="tag">hosting</a>, <a href="https://www.gmpeg.com/tag/wordpress/" rel="tag">wordpress</a>, <a href="https://www.gmpeg.com/tag/workflow/" rel="tag">workflow</a></span>		</footer></article></main></div>
+
+	
+	
+	<div id="secondary" class="column fourth">
+					<div id="sidebar-1" class="widget-area" role="complementary">
+				<aside id="text-3" class="widget widget_text"><h5 class="widget-title">Contact Me</h5>			<div class="textwidget"><p><a href="https://resume.gmpeg.com">resume.gmpeg.com</a></p>
+<p><a href="https://www.linkedin.com/in/frankjantunen/">linkedin.com/in/frankjantunen</a></p>
+<p><a href="https://about.me/frankjantunen">about.me/frankjantunen</a></p>
+</div>
+		</aside><aside id="recent-posts-2" class="widget widget_recent_entries"><h5 class="widget-title">Recent Posts</h5>		<ul><li>
+					<a href="https://www.gmpeg.com/low-latency-baby-monitor/">Low Latency Baby Monitor</a>
+									</li>
+											<li>
+					<a href="https://www.gmpeg.com/turn-your-ebooks-into-audiobooks/">How To Convert Your Ebooks Into Audiobooks</a>
+									</li>
+											<li>
+					<a href="https://www.gmpeg.com/how-to-create-a-l2tp-vpn-server/">How To Create A L2TP VPN Server</a>
+									</li>
+											<li>
+					<a href="https://www.gmpeg.com/learn-anything-even-faster-with-variable-speed-playback-and-text-to-speech/">Learn Anything (Even Faster) With Variable Speed Playback And Text-To-Speech</a>
+									</li>
+											<li>
+					<a href="https://www.gmpeg.com/how-to-record-audiobooks-from-for-free-on-android-how-to-hack-amazon-fire-tablets-to-rip-audiobooks/">How To Record Audiobooks From For Free On Android (How To Hack Amazon Fire Tablets To Rip Audiobooks)</a>
+									</li>
+					</ul></aside></div>
+			</div>
+
+		</div>
+
+	</div>
+
+		<footer id="colophon" class="site-footer" role="contentinfo"><div class="container">
+
+				<div class="site-info">
+
+					
+					
+						<a href="https://wordpress.org/">
+							Proudly powered by WordPress						</a>
+						<br>
+						NS Minimal by <a href="https://www.nuno-sarmento.com/">NS</a>.
+					
+				</div>
+
+			</div>
+
+		</footer></div>
+
+		<a href="#top" class="smoothup" title="Back to top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+		</a>
+	<script type="text/javascript" src="https://www.gmpeg.com/wp-content/themes/ns-minimal/js/retina.js"></script><script type="text/javascript" src="https://www.gmpeg.com/wp-content/themes/ns-minimal/js/plugins.js"></script><script type="text/javascript" src="https://www.gmpeg.com/wp-content/themes/ns-minimal/js/scripts.js"></script></body></html>
