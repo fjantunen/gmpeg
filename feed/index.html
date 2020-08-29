@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GMPEG</title>
+	<atom:link href="https://www.gmpeg.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.gmpeg.com/</link>
+	<description>frank writes about stuff</description>
+	<lastBuildDate>Sun, 12 Jul 2020 20:19:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.7</generator>
+	<item>
+		<title>Low Latency Baby Monitor</title>
+		<link>https://www.gmpeg.com/low-latency-baby-monitor/</link>
+				<pubDate>Sat, 11 Jul 2020 22:23:25 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[technical]]></category>
+		<category><![CDATA[baby monitor]]></category>
+		<category><![CDATA[low latency]]></category>
+		<category><![CDATA[voip]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=113</guid>
+				<description><![CDATA[I wasn&#8217;t happy with the lag in most baby monitor apps out there in the Google Play store. I wanted something with less lag, so when my son moves around or wakes up, I can react more quickly. Gamers know all about lag, and who better to turn to than to them. I settled on<a class="more-link" href="https://www.gmpeg.com/low-latency-baby-monitor/">Read more</a>]]></description>
+								<content:encoded><![CDATA[
+<p>I wasn&#8217;t happy with the lag in most baby monitor apps out there in the Google Play store. I wanted something with less lag, so when my son moves around or wakes up, I can react more quickly.<br><br>Gamers know all about lag, and who better to turn to than to them. I settled on a <a href="https://en.wikipedia.org/wiki/Mumble_(software)">Mumble server</a>, which has since fallen out of favor due to the popularity of Discord. <br><br>Here&#8217;s a <a href="https://sbcguides.com/install-mumble-server-on-raspberry-pi/">great guide</a> I used to set up a Mumble server on my Raspberry Pi. I also set one up on Entware, but those packages are outdated.<br><br>Mumble is very secure and using the Opus audio codec provides ultra low latency communication.<br><br>The best Android mumble client I could find is called <a href="https://f-droid.org/en/packages/se.lublin.mumla/">Mumla</a>, and available via the 3rd party app store F-Droid. Clients also exist for multiple platforms including Windows, Linux, iOS and Android, and Web.<br><br>I set the &#8220;transmitter&#8221; (baby side) to &#8220;Continuous&#8221; mode and set the &#8220;receiver&#8221; (parent side) as &#8220;push to talk&#8221;, in case I want to talk back to the &#8220;transmitter&#8221;. <br><br>This system also makes a great ip based home intercom system.<br><br>To add further automation to this I also set it to auto reconnect, if it loses connection, and I schedule the WiFi to turn off and on at night to minimize EMF exposure at night and maximize battery life.<br><br>I also added a video streaming app in the form of an app called <a href="https://play.google.com/store/apps/details?id=com.pas.webcam.pro&amp;hl=en_US">IPWebcam Pro</a> (which you can password protect).<br><br>I still run both apps on a low end phone as the transmitter, and disable the audio portion of IPWebcam. I cannot achieve the same level of low latency audio that I can with a mumble server/client solution, even with Opus selected.<br><br>IPWebcam does have the lowest latency available for video that I&#8217;ve seen. Using flash tends to offer (I know, I know&#8230; I hate flash too) the absolute lowest latency on the video side.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>How To Convert Your Ebooks Into Audiobooks</title>
+		<link>https://www.gmpeg.com/turn-your-ebooks-into-audiobooks/</link>
+				<pubDate>Tue, 08 Oct 2019 20:44:12 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[reading]]></category>
+		<category><![CDATA[technical]]></category>
+		<category><![CDATA[Text-To-Speech]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=102</guid>
+				<description><![CDATA[I found a great piece of software to turn your epubs as well as other formats into audiobooks, Balabolka. Pair this with some good TTS voices like those from Ivona and you&#8217;ve got yourself quite a nice solution.]]></description>
+								<content:encoded><![CDATA[
+<p>I found a great piece of software to turn your epubs as well as other formats into audiobooks, <a href="http://www.cross-plus-a.com/balabolka.htm">Balabolka</a>.</p>
+
+
+
+<figure class="wp-block-image"><img src="http://www.kevintjohns.com/wp-content/uploads/2016/07/7-Lessons-learned-560x315.jpg" alt="Image result for ebook audiobook"/></figure>
+
+
+
+<p>Pair this with some good TTS voices like those from Ivona and you&#8217;ve got yourself quite a nice solution. </p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>How To Create A L2TP VPN Server</title>
+		<link>https://www.gmpeg.com/how-to-create-a-l2tp-vpn-server/</link>
+				<pubDate>Mon, 07 Oct 2019 21:21:41 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[technical]]></category>
+		<category><![CDATA[vpn]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=100</guid>
+				<description><![CDATA[There are lots of guides on how to do this with OpenVPN, but I wanted to use the built in client in Android to achieve a stable L2TP connection. Works well on my Chromebook as well! Here&#8217;s a great guide I found, specifically for the Raspberry PI, but should work on Debian based distros as<a class="more-link" href="https://www.gmpeg.com/how-to-create-a-l2tp-vpn-server/">Read more</a>]]></description>
+								<content:encoded><![CDATA[
+<p>There are lots of guides on how to do this with OpenVPN, but I wanted to use the built in client in Android to achieve a stable L2TP connection. Works well on my Chromebook as well!</p>
+
+
+
+<p>Here&#8217;s a great guide I found, specifically for the Raspberry PI, but should work on Debian based distros as well, if you omit the first part&#8230;<br><br><a href="https://www.stewright.me/2018/07/create-a-raspberry-pi-vpn-server-using-l2tpipsec/">https://www.stewright.me/2018/07/create-a-raspberry-pi-vpn-server-using-l2tpipsec/</a> </p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Learn Anything (Even Faster) With Variable Speed Playback And Text-To-Speech</title>
+		<link>https://www.gmpeg.com/learn-anything-even-faster-with-variable-speed-playback-and-text-to-speech/</link>
+				<pubDate>Sat, 05 Oct 2019 20:25:08 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[technical]]></category>
+		<category><![CDATA[Learning]]></category>
+		<category><![CDATA[Text-To-Speech]]></category>
+		<category><![CDATA[Variable Speed Playback]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=88</guid>
+				<description><![CDATA[I am a big fan of variable speed playback and fast text-to-speech and I use it everywhere. I recommend using more than one sense when you need to retain new information, for example, reading and listening. Scientists believe that there are 3 main types of learning styles: auditory, visual, and kinesthetic. When you combine these<a class="more-link" href="https://www.gmpeg.com/learn-anything-even-faster-with-variable-speed-playback-and-text-to-speech/">Read more</a>]]></description>
+								<content:encoded><![CDATA[
+<p>I am a big fan of variable speed playback and fast text-to-speech and I use it everywhere.</p>
+
+
+
+<p>I recommend using more than one sense when you need to retain new information, for example, reading and listening. Scientists believe that there are 3 main types of learning styles: auditory, visual, and kinesthetic. When you combine these different types, you can achieve better results.</p>
+
+
+
+<p>After years of experimentation, I&#8217;ve found that you shouldn&#8217;t push it too far beyond 2.6x without losing comprehension unless you have a very slow talker. Foreign accents, unfamiliar subjects, and other variables also make a difference with comprehension at high speeds. I like to move in increments of 0.2x. <br><br>For <a href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en">Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/videospeed/">Firefox</a> I recommend <a href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en">this extension</a> to speed thing up&#8230;</p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.gmpeg.com/wp-content/uploads/2019/10/image-3.png" alt="" class="wp-image-94" srcset="https://www.gmpeg.com/wp-content/uploads/2019/10/image-3.png 510w, https://www.gmpeg.com/wp-content/uploads/2019/10/image-3-300x79.png 300w" sizes="(max-width: 510px) 100vw, 510px" /></figure>
+
+
+
+<p></p>
+
+
+
+<p>For podcasts I use <a href="https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts">Pocket Casts</a>, check out the options below&#8230;</p>
+
+
+
+<figure class="wp-block-image"><img src="http://support.pocketcasts.com/wp-content/uploads/2016/05/IMG_1210.png" alt="Image result for pocket casts variable speed"/><figcaption>Be Sure To Trim Silence As Well For Better Results</figcaption></figure>
+
+
+
+<p><br>For Audiobooks, I use <a href="https://play.google.com/store/apps/details?id=com.acmeandroid.listen">Listen Audiobook Player</a></p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.gmpeg.com/wp-content/uploads/2019/10/image-5.png" alt="" class="wp-image-96" srcset="https://www.gmpeg.com/wp-content/uploads/2019/10/image-5.png 546w, https://www.gmpeg.com/wp-content/uploads/2019/10/image-5-300x127.png 300w" sizes="(max-width: 546px) 100vw, 546px" /></figure>
+
+
+
+<p>For Text To Speech (Reading EPUBs aloud) I use an app called <a href="https://reedy-reader.com/">Reedy</a>. Optionally you can invest in some good quality TTS voices in the Google Play Store and play with the playback speeds.</p>
+
+
+
+<p>On my Chromebook I use this <a href="https://chrome.google.com/webstore/detail/ttsreaderx-in-page-text-t/pakknklefcjdhejnffafpeelofiekebg">extension</a>. It&#8217;s the best one I could find for TTS playback.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.gmpeg.com/wp-content/uploads/2019/10/image-6.png" alt="" class="wp-image-97" srcset="https://www.gmpeg.com/wp-content/uploads/2019/10/image-6.png 609w, https://www.gmpeg.com/wp-content/uploads/2019/10/image-6-300x90.png 300w" sizes="(max-width: 609px) 100vw, 609px" /></figure>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>How To Record Audiobooks From For Free On Android (How To Hack Amazon Fire Tablets To Rip Audiobooks)</title>
+		<link>https://www.gmpeg.com/how-to-record-audiobooks-from-for-free-on-android-how-to-hack-amazon-fire-tablets-to-rip-audiobooks/</link>
+				<pubDate>Sat, 05 Oct 2019 18:57:55 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=79</guid>
+				<description><![CDATA[I listen to a lot of podcasts and audiobooks, and my local library is a great source of audiobooks, however I try to avoid having to rip CDs like it was 1999. Here in the Broward Library system there&#8217;s a few apps through which you can listen to audiobooks (and other content): CloudLibrary (via Nova)<a class="more-link" href="https://www.gmpeg.com/how-to-record-audiobooks-from-for-free-on-android-how-to-hack-amazon-fire-tablets-to-rip-audiobooks/">Read more</a>]]></description>
+								<content:encoded><![CDATA[
+<p>I listen to a lot of podcasts and audiobooks, and my local library is a great source of audiobooks, however I try to avoid having to rip CDs like it was 1999.</p>
+
+
+
+<p>Here in the Broward Library system there&#8217;s a few apps through which you can listen to audiobooks (and other content): <a href="https://play.google.com/store/apps/details?id=com.txtr.android.mmm&amp;hl=en_US">CloudLibrary</a> (via Nova) <a href="https://play.google.com/store/apps/details?id=com.hoopladigital.android&amp;hl=en_US">Hoopla</a>, <a href="https://play.google.com/store/apps/details?id=com.overdrive.mobile.android.libby&amp;hl=en_US">Libby</a>, and <a href="https://play.google.com/store/apps/details?id=com.ocd&amp;hl=en_US">RBDigital</a>.</p>
+
+
+
+<p>I rip them via <a href="https://www.syncios.com/audio-recorder-android/">Syncios Audio Recorder</a> which requires root and an older Android OS. Be sure to start the Audio Recorder app before you open then other apps otherwise recording will not work.</p>
+
+
+
+<p>I then upload them to Google Drive, and sync them to another device I listen on. I can then listen (at my convenience) via <a href="https://play.google.com/store/apps/details?id=com.acmeandroid.listen">Listen Audiobook Player</a>. This is the best Audiobook app, as it supports equalizers and variable speed playback. </p>
+
+
+
+<p>You will need a rooted device, and it has to support an older Android (4/5) for this method to work. I use a 2015 Fire Tablet from Amazon. You could probably use a <a href="https://amzn.to/2ALxJpH">newer version</a> as well, as Fire OS is pretty outdated. Sometimes you can pick them up for as low as $30 new. <a href="https://www.xda-developers.com/amazon-fire-7-5th-7th-gen-unlocked-rooted/">XDA has good information on how to root these devices</a>.</p>
+
+
+
+<p>There are also some high quality TTS voices on the Fire 2015 from Ivona, a company Amazon bought a few years back that I couldn&#8217;t get to run on any other modern devices, another reason to use Fire tablets. If you pair this with a good TTS reader such as my favorite <a href="https://reedy-reader.com/">Reedy</a> you can get some awesome results. Reedy is no longer available in the play store, but if you look around you can find it. </p>
+
+
+
+<p>Reedy also supports <a href="https://en.wikipedia.org/wiki/Rapid_serial_visual_presentation">RSVP</a>, think about RVSP as technologically assisted speed reading. I prefer to read normally and use variable speed playback to <a href="http://jaems.jp/contents/icomej/vol11/06_Nagahama.pdf">enhance retention</a>.</p>
+
+
+
+<p>Before trying this method I tried a legacy Android emulator made by American Megatrends called <a href="http://emulation.gametechwiki.com/index.php/Android_emulators">Amiduos</a>. This for some reason does not support  <a href="https://www.syncios.com/audio-recorder-android/">Syncios Audio Recorder</a> properly. Also, development stopped on this emulator, but if you need an Android emulator, it&#8217;s the best and fastest one, if you can find it.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>How To Host A Static WordPress Site On GCP (Google Cloud)</title>
+		<link>https://www.gmpeg.com/hosting-a-static-wordpress-site-on-gcp/</link>
+				<pubDate>Fri, 04 Oct 2019 17:17:00 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[technical]]></category>
+		<category><![CDATA[gcp]]></category>
+		<category><![CDATA[hosting]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[workflow]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=63</guid>
+				<description><![CDATA[I am using Google Cloud at work, so I wanted to start a website on there as well. Turns out it&#8217;s dirt cheap to host your website in a GCP bucket. I looked at various static site generators to help me like Hugo, Pelican, and others. The reason being, so as to not have to<a class="more-link" href="https://www.gmpeg.com/hosting-a-static-wordpress-site-on-gcp/">Read more</a>]]></description>
+								<content:encoded><![CDATA[
+<p>I am using Google Cloud at work, so I wanted to start a website on there as well. Turns out it&#8217;s dirt cheap to <a href="https://cloud.google.com/storage/docs/hosting-static-website">host your website in a GCP bucket</a>. </p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.gmpeg.com/wp-content/uploads/2019/10/image-1.png" alt="" class="wp-image-75" srcset="https://www.gmpeg.com/wp-content/uploads/2019/10/image-1.png 151w, https://www.gmpeg.com/wp-content/uploads/2019/10/image-1-150x150.png 150w" sizes="(max-width: 151px) 100vw, 151px" /></figure>
+
+
+
+<p>I looked at various static site generators to help me like Hugo, Pelican, and others. The reason being, so as to not have to worry about all the security aspects of hosting a WordPress site, with all the constant updates it requires. I was inspired by a chapter from<a href="https://amzn.to/359xcf4"> Josh Kaufman&#8217;s The First 20 Hours: How to Learn Anything . . . Fast!</a>. He writes about Jekyll, and Hugo is the logical one to choose should you go down that route.<br><br>I played around with quite a few of them and Hugo (Go) and Pelican (Python) are my favorites. Hugo is uber fast and efficient. They all support Markdown and I might end up going back to experiment some more with Hugo later on.<br><br>They were all interesting little experiments, but didn&#8217;t really meet my needs. I was already familiar with the concept on a self-hosted WordPress instance, however using <a href="https://wp2static.com/">WP2Static</a>, I could accomplish the same thing, but with less effort to maintain, and it ticks the box of &#8220;one less thing to do&#8221;.</p>
+
+
+
+<p>Using WordPress plugins to generate static web sites has some limitations. Here&#8217;s a great guide.</p>
+
+
+
+<p><a href="https://www.brianshim.com/webtricks/wordpress-static-site-generator/">https://www.brianshim.com/webtricks/wordpress-static-site-generator/</a></p>
+
+
+
+<p>Here&#8217;s my workflow:</p>
+
+
+
+<p>I create an Ubuntu VM with <a href="https://wordops.net/">WordOPs</a> scripts. I then install <a href="https://cloud.google.com/storage/docs/gsutil_install">gsutil</a> to connect to my gcp bucket after I generate the site&#8217;s contents.</p>
+
+
+
+<p>I then follow <a href="https://cloud.google.com/storage/docs/hosting-static-website">this guide</a> to set up my GCP bucket so it matches the DNS for my domain&#8230;</p>
+
+
+
+<p>Finally, I want to have CloudFlare <a href="https://community.cloudflare.com/t/using-cloudflare-cdn-https-with-google-cloud-storage/15602">manage my SSL</a> and act as a CDN to add extra security and limit the traffic to my bucket further.</p>
+
+
+
+<p>Now if I want to make a post, I have multiple levels of security. I would have to VPN into my network to connect to my WordPress VM. I can do this on my phone with the WordPress App. This isolates the wordpress portion.</p>
+
+
+
+<p>I can then generate the static site from my vm and push it to my bucket, making it effectively a staging site, separating it from production. I can do the whole process securely from my phone with a SSH client.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p><br></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Review: Using A LG G5 On Sprint BYOD Unlimited Free Plan</title>
+		<link>https://www.gmpeg.com/review-free-former-android-flagship-phone-lg-g5-on-sprint-byod-unlimited-free-plan/</link>
+				<pubDate>Thu, 03 Oct 2019 21:35:23 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[technical]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[review]]></category>
+		<category><![CDATA[sprint]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=56</guid>
+				<description><![CDATA[So last March I saw this great post on Slickdeals about the Sprint BYOD unlimited free plan. It&#8217;s not free, but close to it (only taxes need to be paid which works out to be under $4 a month per line). I signed up for it and grabbed a used LG G5 from eBay for<a class="more-link" href="https://www.gmpeg.com/review-free-former-android-flagship-phone-lg-g5-on-sprint-byod-unlimited-free-plan/">Read more</a>]]></description>
+								<content:encoded><![CDATA[
+<p>So last March I saw this great post on Slickdeals about the<a href="https://slickdeals.net/f/10235008-sprint-byod-1-year-unlimited-talk-text-data-free-w-eligible-device-sim-req?src=SiteSearchV2_SearchBarV2Algo1"> Sprint BYOD unlimited free plan</a>. It&#8217;s not free, but close to it (only taxes need to be paid which works out to be under $4 a month per line). I signed up for it and grabbed a used LG G5 from eBay for around fifty bucks.</p>
+
+
+
+<p>The reason I chose this phone is that it has decent specs being a former flagship phone, and great cameras. I also don&#8217;t need the marketing hype of the latest and greatest.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://images-na.ssl-images-amazon.com/images/I/71NbLPTDnAL._SL1500_.jpg" alt=""/></figure>
+
+
+
+<p>The upsides of this phone&#8230;</p>
+
+
+
+<p>It&#8217;s <a href="https://www.ebay.com/b/LG-G5-Sprint-Cell-Phones-Smartphones/9355/bn_80193592">dirt cheap</a><br>Great cameras<br>Support for <a href="https://www.xda-developers.com/google-camera-port-hub/">GCAM</a> (i.e. Google Camera)<br><a href="https://amzn.to/2nbhGOK">Removable battery</a><br>Supports <a href="https://amzn.to/30FqGt7">powerbear cases</a><br>Supports NFC and Google Pay</p>
+
+
+
+<p>The downsides of this phone&#8230;</p>
+
+
+
+<p>Stuck on Sprint<br>Tons of Sprint bloatware (easily disabled)<br>Crappy OEM battery (2800 mAh)<br>No new OEM batteries available<br>It&#8217;s not rootable<br>It&#8217;s used<br>No Android updates anymore (Android 7)</p>
+
+
+
+<p>But hey for fifty bucks, what do you expect?</p>
+
+
+
+<p>So what did I do to make this phone better?</p>
+
+
+
+<ul><li>For starters I disabled all that bloatware.</li><li>I don&#8217;t install too many apps.</li><li>I use <a href="https://blokada.org">Blokada</a> to block ads (no need to root it)</li><li>I use the <a href="https://www.xda-developers.com/google-camera-port-hub/">Google camera app</a>. (I am super grateful to the developers who hacked it to work on this device)</li><li>I use the <a href="https://play.google.com/store/apps/details?id=com.urbandroid.lux">twilight app</a> for blue light filtering.</li><li>I disable features that I don&#8217;t use, even Google ones, such as Google Assistant and replace them with <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.searchlite">Google Go</a>.</li><li>Paired it with a power bear <a href="https://amzn.to/2nbhGOK">battery</a> (and power bear <a href="https://amzn.to/30FqGt7">case</a>) and that solves the crappy battery issue. The downside being that it is a brick now.</li></ul>
+
+
+
+<p>That&#8217;s pretty much it. Oh there is one Sprint app where you might want to add is the <a href="https://play.google.com/store/apps/details?id=com.bh.sprint">My Sprint Rewards app</a>. Occasionally you get some pretty good stuff from there, like free gifts cards.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Reduce Your Physical Spam</title>
+		<link>https://www.gmpeg.com/reduce-your-physical-spam-load/</link>
+				<pubDate>Tue, 01 Oct 2019 18:22:15 +0000</pubDate>
+		<dc:creator><![CDATA[Frank]]></dc:creator>
+				<category><![CDATA[life hacks]]></category>
+		<category><![CDATA[florida]]></category>
+		<category><![CDATA[green]]></category>
+		<category><![CDATA[one less thing]]></category>
+		<category><![CDATA[spam]]></category>
+
+		<guid isPermaLink="false">https://www.gmpeg.com/?p=30</guid>
+				<description><![CDATA[Turns out you can unsubscribe from these types of ads. This is great news because my city of Coconut Creek, FL does not recycle paper anymore! Anyway, here&#8217;s the address to remove yourself&#8230; https://www.retailmenot.com/everyday/unsubscribe]]></description>
+								<content:encoded><![CDATA[
+<p>Turns out you can unsubscribe from these types of ads. This is great news because my city of Coconut Creek, FL does not recycle paper anymore!<br><br></p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.gmpeg.com/wp-content/uploads/2019/10/20191001_141905_1215677620.jpg" alt="" class="wp-image-28" srcset="https://www.gmpeg.com/wp-content/uploads/2019/10/20191001_141905_1215677620.jpg 858w, https://www.gmpeg.com/wp-content/uploads/2019/10/20191001_141905_1215677620-257x300.jpg 257w, https://www.gmpeg.com/wp-content/uploads/2019/10/20191001_141905_1215677620-768x895.jpg 768w" sizes="(max-width: 858px) 100vw, 858px" /><figcaption>typical weekly serving of spam</figcaption></figure>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.gmpeg.com/wp-content/uploads/2019/10/image.png" alt="" class="wp-image-35" srcset="https://www.gmpeg.com/wp-content/uploads/2019/10/image.png 702w, https://www.gmpeg.com/wp-content/uploads/2019/10/image-300x155.png 300w" sizes="(max-width: 702px) 100vw, 702px" /><figcaption>official coconut creek city recycling rules, as of 10/1/19</figcaption></figure>
+
+
+
+<p>Anyway, here&#8217;s the address to remove yourself&#8230;<br><br> <a href="https://www.retailmenot.com/everyday/unsubscribe">https://www.retailmenot.com/everyday/unsubscribe</a> </p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
